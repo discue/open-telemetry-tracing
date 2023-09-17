@@ -9,7 +9,8 @@
     "lib"
   ],
   "exports": {
-    ".": "./lib/index.js"
+    ".": "./lib/index.js",
+    "./instrumentation": "./lib/instrumentation.js"
   },
   "bugs": {
     "url": "https://github.com/discue/open-telemetry-tracer"
