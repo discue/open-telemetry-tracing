@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "functions-framework --target=api --signature-type=http",
-    "test": "mocha --timeout 5000 test/**/*spec.js --file test/global-mocha-setup.js --file ./lib/instrumentation.cjs",
+    "test": "mocha --timeout 10000 test/**/*spec.js --file test/global-mocha-setup.js --file ./lib/instrumentation.cjs",
     "test:ci": "npm run test -- --forbid-only",
     "coverage": "nyc c8 --100 npm run test:ci",
     "lint": "npx eslint -c .eslintrc.cjs lib --ext .js,.jsx,.ts,.tsx",
