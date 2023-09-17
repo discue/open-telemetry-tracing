@@ -29,9 +29,131 @@ Kickstarts your [OpenTelemetry](https://opentelemetry.io/docs/instrumentation/js
 
 ![Screenshot of traces collected by Jaeger.](traces.png)
 
-## Usage
-To enable tracing at runtime set the `NODE_OPTIONS` environment variable and `require` the file `./tracing/tracing.cjs`, which is the entry point for tracing.
-- `NODE_OPTIONS=--require ./tracing/tracing.cjs`
+## Setup
+[OpenTelemetry](https://opentelemetry.io/docs/instrumentation/js/getting-started/nodejs/) and its [Instrumentations](https://opentelemetry.io/docs/instrumentation/js/libraries/) will inject tracing functionality into well-known and supported packages. 
+
+To enable tracing, the tracing runtime needs to be loaded **before** your application. To do so, set the `NODE_OPTIONS` environment variable and `require` the file `node_modules/@discue/open-telemetry-tracing/lib/instrumentation.cjs`, which is the entry point for tracing.
+- `NODE_OPTIONS=--require node_modules/@discue/open-telemetry-tracing/lib/instrumentation.cjs`
+
+## Instrumentation
+[Instrumentations](https://opentelemetry.io/docs/instrumentation/js/libraries/) are the heart of tracing. Most of the tracing instrumentation is platform-agnostic. However, some parts of it can be platform-dependent.
+
+This module features support for GCP and half-baked support for AWS (due to lack of usage of the platform in other projects). You can find the default instrumentations here:
+- [Amazon Web Services](lib/tracing/aws/aws-instrumentations.cjs)
+- [Google Cloud Platform](lib/tracing/gcp/gcp-instrumentations.cjs)
+- [Localhost / Development](lib/tracing/gcp/gcp-instrumentations.cjs)
+
+If you feel instrumentations (or other features) are missing, please get in touch with us and / or open a PR 🙂.
+
+## How to create a span
+
+Import the function `createTracer` and pass the `filepath` as an optional parameter.
+```js
+import { createTracer } from '@discue/open-telemetry-tracing';
+```
+
+Call the function `createTracer` and pass the `filepath` to the current file as an optional parameter.
+```js
+const { withActiveSpan } = createTracer({
+    filepath: import.meta.url
+})
+```
+
+Wrap existing or new code inside a call to `withActiveSpan`.
+```js
+/**
+ * 
+ * @param {_types.Request} req 
+ * @param {_types.Response} res 
+ * @param {Object} options
+ * @returns 
+ */
+async handleRequest(req, res, { resourceIds }) {
+    // creates a new active span with name handle-delete-request
+    // will watch execution and record failures
+    //
+    // pass an object with additional attributes as second parameter
+    // to get more key value pairs added to the span
+    await withActiveSpan('handle-delete-request', async (span) => {
+        const resource = await this._service.get(resourceIds)
+        if (resource == null) {
+            // custom extension of the span with implementation-specific
+            // event and status
+            span.addEvent('Not found', { resourceIds })
+                .setStatus({ code: SpanStatusCode.ERROR })
+
+            return sendNotFound(res)
+        } else {
+            await this._service.delete(resourceIds)
+            sendOk({ req, res, body: {}, links: {} })
+        }
+    })
+}
+```
+
+See a full implementation e.g. in [@stfsy/api-kit/http-post-resource-endpoint](https://github.com/stfsy/node-api-kit/blob/main/lib/endpoints/http-post-resource-endpoint.js).
+
+## How to create a span synchronously
+To wrap a synchronous function inside a span, use the `withActiveSpanSync` method. It also accepts a `spanAttributes` object as optional second parameter.
+
+```js
+import { createTracer } from '@discue/open-telemetry-tracing';
+import { nanoid } from "nanoid";
+
+const { withActiveSpanSync } = createTracer({
+    filepath: import.meta.url
+})
+
+/**
+ * Creates a url-safe resource id.
+ * 
+ * @module newResourceId
+ * @returns {String}
+ */
+export const newResourceId = () => {
+    // wrap the sync call in a span and return the value
+    // that way the tracing is transparent for all callers
+    return withActiveSpanSync('create-resource-id', () => {
+        return nanoId()
+    })
+}
+```
+
+See a full implementation e.g. in [@stfsy/api-kit/resource-id](https://github.com/stfsy/node-api-kit/blob/main/lib/util/resource-id.js).
+
+
+## How to create an orphaned span
+That is a span that has no parent. Useful if you want to prevent deep nesting of spans. To create an orphan span call the `withOrphanedSpan` method of the module. The `spanAttributes` object is optional and can be omitted.
+
+```js
+import { createTracer } from '@discue/open-telemetry-tracing';
+import { SpanStatusCode } from '@opentelemetry/api';
+
+const { withOrphanedSpan } = createTracer({
+    filepath: import.meta.url
+})
+
+const { method, headers } = request
+const incomingContentType = headers['content-type'] ?? ''
+const spanAttributes = { method, incomingContentType }
+
+// checks whether the content type is set
+// sets span status accordingly
+// adds content-type as a span attribute so it can be queried via UI e.g. Jaeger
+await withOrphanedSpan('check-content-type-is-set', spanAttributes, (span) => {
+    if (!incomingContentType ) {
+        span.addEvent('Check failed').setStatus({ code: SpanStatusCode.ERROR })
+        return sendUnsupportedMedia(response)
+
+    } else {
+        span.addEvent('Check succeeded').setStatus({ code: SpanStatusCode.OK })
+    }
+
+    return nextFunction()
+})
+```
+
+See a full implementation e.g. in [@stfsy/api-kit/content-type-middleware](https://github.com/stfsy/node-api-kit/blob/main/lib/middlewares/content-type.js).
 
 ## Configuration
 The following environment variables will be used:
