@@ -15,7 +15,8 @@ fi
 
 trap cleanup EXIT
 
-export NODE_OPTIONS="--require ./lib/tracing/tracing.cjs"
+export DSQ_OT_USE_SIMPLE_SPAN_PROCESSOR=true
+export NODE_OPTIONS="--require ./lib/instrumentation.cjs"
 
 # do not allow --only if running on cicd environment
 if [[ -z "${GITHUB_ACTIONS}" ]]; then
