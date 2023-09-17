@@ -12,6 +12,13 @@
     ".": "./lib/index.js",
     "./instrumentation": "./lib/instrumentation.js"
   },
+  "typesVersions": {
+    "*": {
+      "instrumentation": [
+        "lib/instrumentation"
+      ]
+    }
+  },
   "bugs": {
     "url": "https://github.com/discue/open-telemetry-tracing"
   },
