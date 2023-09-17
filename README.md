@@ -19,7 +19,7 @@
 
 </div>
 
-# OpenTelemetry Tracing
+# open-telemetry-tracing
 Kickstarts your [OpenTelemetry](https://opentelemetry.io/docs/instrumentation/js/getting-started/nodejs/) implementation with first-class abstractions for
 - adding tracing capabilities to NodeJS environments
 - collecting and publishing of spans to local and cloud environments

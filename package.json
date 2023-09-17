@@ -1,5 +1,5 @@
 {
-  "name": "@discue/open-telemetry-tracer",
+  "name": "@discue/open-telemetry-tracing",
   "version": "0.0.0",
   "description": "Simple scheduling and queueing",
   "engines": {
@@ -13,10 +13,10 @@
     "./instrumentation": "./lib/instrumentation.js"
   },
   "bugs": {
-    "url": "https://github.com/discue/open-telemetry-tracer"
+    "url": "https://github.com/discue/open-telemetry-tracing"
   },
   "repository": {
-    "url": "https://github.com/discue/open-telemetry-tracer/issues"
+    "url": "https://github.com/discue/open-telemetry-tracing/issues"
   },
   "scripts": {
     "start": "functions-framework --target=api --signature-type=http",
