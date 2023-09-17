@@ -1,0 +1,49 @@
+{
+  "name": "@discue/open-telemetry-tracer",
+  "version": "0.0.0",
+  "description": "Simple scheduling and queueing",
+  "engines": {
+    "node": "18"
+  },
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/discue/open-telemetry-tracer"
+  },
+  "repository": {
+    "url": "https://github.com/discue/open-telemetry-tracer/issues"
+  },
+  "scripts": {
+    "start": "functions-framework --target=api --signature-type=http",
+    "test": "mocha --timeout 10000 test/**/*spec.js --file test/global-mocha-setup.js",
+    "test:ci": "npm run test -- --forbid-only",
+    "coverage": "nyc c8 --100 npm run test:ci",
+    "lint": "npx eslint -c .eslintrc.cjs lib --ext .js,.jsx,.ts,.tsx",
+    "lint-test": "npx eslint -c .eslintrc.cjs test --ext .js,.jsx,.ts,.tsx",
+    "standard-version": "standard-version",
+    "create-types": "npx tsc lib/index.js --declaration --emitDeclarationOnly --allowJs",
+    "publish-version": "npm publish --access public",
+    "push-tags": "git push --follow-tags origin main",
+    "release-generic": "npm run push-tags && npm run create-types && npm run publish-version",
+    "release-minor": "npm run standard-version -- --release-as minor && npm run release-generic",
+    "release-major": "npm run standard-version -- --release-as major && npm run release-generic"
+  },
+  "author": "Stefan Pfaffel <spfaffel@gmail.com>",
+  "license": "MIT",
+  "optionalDependencies": {
+    "@opentelemetry/api": "^1.4.1",
+    "@opentelemetry/semantic-conventions": "^1.15.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint": "^8.47.0",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.1.6"
+  }
+}
