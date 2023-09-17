@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.1.0...v0.2.0) (2023-09-17)
+
+
+### Chores
+
+* add types version to package.json ([644d644](https://github.com/discue/open-telemetry-tracing/issues/commit/644d644091c59970f55339836207f4fe63320675))
+* configure dependabot to update OT deps together ([835264c](https://github.com/discue/open-telemetry-tracing/issues/commit/835264c2ceb58003d7718c2470176ee6012789e9))
+* **deps-dev:** bump chai from 4.3.7 to 4.3.8 ([b6380d6](https://github.com/discue/open-telemetry-tracing/issues/commit/b6380d69d3b64a01cd0d65f0d0f3a1aa07c3bf3d))
+* **deps-dev:** bump eslint from 8.47.0 to 8.49.0 ([9d4b47e](https://github.com/discue/open-telemetry-tracing/issues/commit/9d4b47ea1f6346a24d0af22f162b812573e5d341))
+* **deps-dev:** bump typescript from 5.1.6 to 5.2.2 ([dbc0c53](https://github.com/discue/open-telemetry-tracing/issues/commit/dbc0c53d72ab4b3a069fe9ef2e1a13d89c644d4c))
+* **deps:** bump @opentelemetry/instrumentation-http ([ce37956](https://github.com/discue/open-telemetry-tracing/issues/commit/ce379562fcfc4306b398ce4d8337536305103a4e))
+* **deps:** bump actions/checkout from 3.5.3 to 4.0.0 ([2d9d554](https://github.com/discue/open-telemetry-tracing/issues/commit/2d9d554acd5f40c5f0fdc29df7e6f54cb528b71c))
+* **deps:** update dependencies ([5ea2e91](https://github.com/discue/open-telemetry-tracing/issues/commit/5ea2e917fdbd6dd161e8a8334682c495890ffa8a))
+* have git ignore all types ([d24b40f](https://github.com/discue/open-telemetry-tracing/issues/commit/d24b40f58a912f0d71f1c216545fca80f4247ede))
+* update readme ([725b2e4](https://github.com/discue/open-telemetry-tracing/issues/commit/725b2e47942b99d452a35e0ca0f26068d3525333))
+
 ## 0.1.0 (2023-09-17)
 
 
