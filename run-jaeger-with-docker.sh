@@ -1,11 +1,5 @@
 #!/bin/bash
 
-function cleanup() {
-    echo stopping jaeger
-}
-
-trap cleanup EXIT
-
 docker run \
   -d \
   -e COLLECTOR_ZIPKIN_HOST_PORT=:9411 \
