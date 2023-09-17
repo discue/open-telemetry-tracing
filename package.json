@@ -38,7 +38,7 @@
   "optionalDependencies": {
     "@opentelemetry/api": "^1.4.1",
     "@opentelemetry/exporter-jaeger": "^1.16.0",
-    "@opentelemetry/exporter-trace-otlp-http": "^0.41.2",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.43.0",
     "@opentelemetry/instrumentation": "^0.41.2",
     "@opentelemetry/instrumentation-aws-lambda": "^0.37.0",
     "@opentelemetry/instrumentation-dns": "^0.32.2",
