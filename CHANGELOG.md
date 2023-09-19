@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.2.0...v0.3.0) (2023-09-19)
+
+
+### Bug Fixes
+
+* jsdoc errors cause type generation to fail ([e1b447e](https://github.com/discue/open-telemetry-tracing/issues/commit/e1b447e9149e05468583d8df0cd940218c5d45be))
+* slow startup caused by fs and http instrumentations ([91b0841](https://github.com/discue/open-telemetry-tracing/issues/commit/91b084176385d70c4e9a0a640e97771143906f83))
+
 ## [0.2.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.1.0...v0.2.0) (2023-09-17)
 
 
