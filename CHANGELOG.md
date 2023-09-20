@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.3.0...v0.4.0) (2023-09-20)
+
+
+### Features
+
+* allow apps to configure prefix for span names ([489f7a0](https://github.com/discue/open-telemetry-tracing/issues/commit/489f7a0be611ea9762c647ad1d2187980ad3c9d2))
+* shutdown instrumentation on SIGTERM signal ([b46a090](https://github.com/discue/open-telemetry-tracing/issues/commit/b46a090ecd42da9c8d516b031e8cc73a53385390))
+
 ## [0.3.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.2.0...v0.3.0) (2023-09-19)
 
 
