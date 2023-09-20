@@ -50,6 +50,22 @@ describe('Tracing', () => {
                 })
             })
         })
+        describe('.withActiveSpan', () => {
+            const spanName = 'api-kit::active-handler'
+            before(() => {
+                return simpleFetch('http://127.0.0.1:4444/prefix/active-span')
+            })
+            it('creates a span with a prefix', async () => {
+                await retry(async () => {
+                    const spans = await fetchSpans({ spanName })
+
+                    const span = spans.find((s) => s.operationName === spanName)
+                    expect(span.operationName).to.equal(spanName)
+                    const tag = span.tags.find((s) => s.key === 'otel.library.name')
+                    expect(tag.value).to.equal('api-kit')
+                })
+            })
+        })
 
         describe('.withActiveSpanSync', () => {
             const spanName = 'active-sync-handler'
@@ -90,6 +106,23 @@ describe('Tracing', () => {
                 })
             })
         })
+   
+        describe('.withActiveSpanSync', () => {
+            const spanName = 'api-kit::active-sync-handler'
+            before(() => {
+                return simpleFetch('http://127.0.0.1:4444/prefix/active-span-sync')
+            })
+            it('creates a span with a prefix', async () => {
+                await retry(async () => {
+                    const spans = await fetchSpans({ spanName })
+
+                    const span = spans.find((s) => s.operationName === spanName)
+                    expect(span.operationName).to.equal(spanName)
+                    const tag = span.tags.find((s) => s.key === 'otel.library.name')
+                    expect(tag.value).to.equal('api-kit')
+                })
+            })
+        })
 
         describe('.withOrphanedSpan', () => {
             const spanName = 'orphaned-span-handler'
@@ -127,6 +160,23 @@ describe('Tracing', () => {
                     } catch (e) {
                         done(e)
                     }
+                })
+            })
+        })
+        
+        describe('.withOrphanedSpan', () => {
+            const spanName = 'api-kit::orphaned-span-handler'
+            before(() => {
+                return simpleFetch('http://127.0.0.1:4444/prefix/orphaned-span')
+            })
+            it('creates a span with a prefix', async () => {
+                await retry(async () => {
+                    const spans = await fetchSpans({ spanName })
+
+                    const span = spans.find((s) => s.operationName === spanName)
+                    expect(span.operationName).to.equal(spanName)
+                    const tag = span.tags.find((s) => s.key === 'otel.library.name')
+                    expect(tag.value).to.equal('api-kit')
                 })
             })
         })
