@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.4.0...v0.5.0) (2023-10-08)
+
+
+### Features
+
+* use google cloud trace exporter on gcp ([4f1ab73](https://github.com/discue/open-telemetry-tracing/issues/commit/4f1ab73f63bf2d609281e522febfd2f56062784c))
+
+
+### Chores
+
+* **deps-dev:** bump chai from 4.3.8 to 4.3.10 ([2a07990](https://github.com/discue/open-telemetry-tracing/issues/commit/2a0799032658966faab840c45adc3e6c44d0bfbc))
+* **deps-dev:** bump eslint from 8.49.0 to 8.50.0 ([7499e35](https://github.com/discue/open-telemetry-tracing/issues/commit/7499e35de8dcfe4492d4ab765fd93558a0610947))
+* **deps:** add google cloud trace exporter ([8c4ea26](https://github.com/discue/open-telemetry-tracing/issues/commit/8c4ea26e055f6fd3a777c6e9f8aea737fb62d8ae))
+* **deps:** bump actions/checkout from 4.0.0 to 4.1.0 ([52c34db](https://github.com/discue/open-telemetry-tracing/issues/commit/52c34dbe0505cafdf836f4fac02f6c604a105a24))
+
 ## [0.4.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.3.0...v0.4.0) (2023-09-20)
 
 
