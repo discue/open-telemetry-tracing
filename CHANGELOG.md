@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.5.0...v0.6.0) (2023-10-29)
+
+
+### Bug Fixes
+
+* **deps:** fix export issue by downgrading otlp-http package ([49374b3](https://github.com/discue/open-telemetry-tracing/issues/commit/49374b3b5e2c098bff2a91d6cf7a18314b089667))
+
+
+### Chores
+
+* **deps-dev:** bump eslint from 8.50.0 to 8.51.0 ([a7f0390](https://github.com/discue/open-telemetry-tracing/issues/commit/a7f03907975e54eda1d51fe77241485de1acd89f))
+* **deps-dev:** bump eslint from 8.51.0 to 8.52.0 ([04837ad](https://github.com/discue/open-telemetry-tracing/issues/commit/04837ad30df510cfe90cd6d409f6cfde8516b42d))
+* **deps:** bump actions/checkout from 4.1.0 to 4.1.1 ([025ef7b](https://github.com/discue/open-telemetry-tracing/issues/commit/025ef7b48086037e34b287512ea438d7e69ca532))
+* **deps:** update dependencies ([6b40635](https://github.com/discue/open-telemetry-tracing/issues/commit/6b406356a5638b126cd7f6f572e905324a5721de))
+
 ## [0.5.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.4.0...v0.5.0) (2023-10-08)
 
 
