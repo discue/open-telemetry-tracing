@@ -52,7 +52,7 @@
     "@opentelemetry/instrumentation-dns": "^0.32.2",
     "@opentelemetry/instrumentation-express": "^0.33.1",
     "@opentelemetry/instrumentation-fs": "^0.8.1",
-    "@opentelemetry/instrumentation-grpc": "^0.44.0",
+    "@opentelemetry/instrumentation-grpc": "^0.45.1",
     "@opentelemetry/instrumentation-http": "^0.44.0",
     "@opentelemetry/instrumentation-mongodb": "^0.37.0",
     "@opentelemetry/instrumentation-net": "^0.32.1",
