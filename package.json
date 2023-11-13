@@ -58,7 +58,7 @@
     "@opentelemetry/instrumentation-net": "^0.32.1",
     "@opentelemetry/instrumentation-pino": "^0.34.1",
     "@opentelemetry/sdk-trace-node": "^1.15.2",
-    "@opentelemetry/semantic-conventions": "^1.17.0"
+    "@opentelemetry/semantic-conventions": "^1.18.1"
   },
   "devDependencies": {
     "chai": "^4.3.10",
