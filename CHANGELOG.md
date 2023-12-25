@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.6.0...v0.7.0) (2023-12-25)
+
+
+### Chores
+
+* **deps-dev:** bump eslint from 8.52.0 to 8.54.0 ([80f02eb](https://github.com/discue/open-telemetry-tracing/issues/commit/80f02eb667450662a4d0c211faf00b52df685558))
+* **deps-dev:** bump eslint from 8.54.0 to 8.55.0 ([175cc33](https://github.com/discue/open-telemetry-tracing/issues/commit/175cc337f4891c465556f7d3f0b5db315f482d34))
+* **deps-dev:** bump typescript from 5.2.2 to 5.3.2 ([66e3b87](https://github.com/discue/open-telemetry-tracing/issues/commit/66e3b872440d31c0d0068ccf0914eab575057085))
+* **deps-dev:** bump typescript from 5.3.2 to 5.3.3 ([578b743](https://github.com/discue/open-telemetry-tracing/issues/commit/578b743fd3547159156ec5860649b7b1c6574ee1))
+* **deps:** bump actions/setup-node from 3 to 4 ([30df16a](https://github.com/discue/open-telemetry-tracing/issues/commit/30df16a7d5c414134670ef614eab6f91b94bbec4))
+* **deps:** bump actions/stale from 8 to 9 ([c9e9797](https://github.com/discue/open-telemetry-tracing/issues/commit/c9e9797d80f11d0dc429510601c253d7074c2524))
+* **deps:** pin @opentelemetry/exporter-trace-otlp-http version ([d5c08cf](https://github.com/discue/open-telemetry-tracing/issues/commit/d5c08cfa0bbee7163c592ec9f5f2344590427c4a))
+* **deps:** update dependencies ([074147e](https://github.com/discue/open-telemetry-tracing/issues/commit/074147e7df0867e2006c4b93d67139769b6bbb40))
+
 ## [0.6.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.5.0...v0.6.0) (2023-10-29)
 
 
