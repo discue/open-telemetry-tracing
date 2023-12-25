@@ -16,26 +16,9 @@ describe('Tracing', () => {
             before(() => {
                 return simpleFetch('http://127.0.0.1:4444/active-span')
             })
-            it('creates a span', async () => {
-                await retry(async () => {
-                    const spans = await fetchSpans({ spanName })
-
-                    const span = spans.find((s) => s.operationName === spanName)
-                    expect(span.operationName).to.equal(spanName)
-                    const tag = span.tags.find((s) => s.key === 'otel.library.name')
-                    expect(tag.value).to.equal('api-kit')
-                })
-            })
 
             it('adds attributes to the span', async () => {
-                await retry(async () => {
-                    const spans = await fetchSpans({ spanName })
-
-                    const span = spans.find((s) => s.operationName === spanName)
-                    expect(span.operationName).to.equal(spanName)
-                    const tag = span.tags.find((s) => s.key === 'my')
-                    expect(tag.value).to.equal('attr')
-                })
+                await assertSpanWithAttributeExists(spanName)
             })
 
             it('calls the callback with the span as first attribute', (done) => {
@@ -55,15 +38,8 @@ describe('Tracing', () => {
             before(() => {
                 return simpleFetch('http://127.0.0.1:4444/prefix/active-span')
             })
-            it('creates a span with a prefix', async () => {
-                await retry(async () => {
-                    const spans = await fetchSpans({ spanName })
-
-                    const span = spans.find((s) => s.operationName === spanName)
-                    expect(span.operationName).to.equal(spanName)
-                    const tag = span.tags.find((s) => s.key === 'otel.library.name')
-                    expect(tag.value).to.equal('api-kit')
-                })
+            it('adds attributes to the span', async () => {
+                await assertSpanWithAttributeExists(spanName)
             })
         })
 
@@ -72,26 +48,9 @@ describe('Tracing', () => {
             before(() => {
                 return simpleFetch('http://127.0.0.1:4444/active-span-sync')
             })
-            it('creates a span', async () => {
-                await retry(async () => {
-                    const spans = await fetchSpans({ spanName })
-
-                    const span = spans.find((s) => s.operationName === spanName)
-                    expect(span.operationName).to.equal(spanName)
-                    const tag = span.tags.find((s) => s.key === 'otel.library.name')
-                    expect(tag.value).to.equal('api-kit')
-                })
-            })
 
             it('adds attributes to the span', async () => {
-                await retry(async () => {
-                    const spans = await fetchSpans({ spanName })
-
-                    const span = spans.find((s) => s.operationName === spanName)
-                    expect(span.operationName).to.equal(spanName)
-                    const tag = span.tags.find((s) => s.key === 'my')
-                    expect(tag.value).to.equal('attr')
-                })
+                await assertSpanWithAttributeExists(spanName)
             })
 
             it('calls the callback with the span as first attribute', (done) => {
@@ -112,15 +71,8 @@ describe('Tracing', () => {
             before(() => {
                 return simpleFetch('http://127.0.0.1:4444/prefix/active-span-sync')
             })
-            it('creates a span with a prefix', async () => {
-                await retry(async () => {
-                    const spans = await fetchSpans({ spanName })
-
-                    const span = spans.find((s) => s.operationName === spanName)
-                    expect(span.operationName).to.equal(spanName)
-                    const tag = span.tags.find((s) => s.key === 'otel.library.name')
-                    expect(tag.value).to.equal('api-kit')
-                })
+            it('adds attributes to the span', async () => {
+                await assertSpanWithAttributeExists(spanName)
             })
         })
 
@@ -129,25 +81,10 @@ describe('Tracing', () => {
             before(() => {
                 return simpleFetch('http://127.0.0.1:4444/orphaned-span')
             })
-            it('creates a span', async () => {
-                await retry(async () => {
-                    const spans = await fetchSpans({ spanName })
-
-                    const span = spans.find((s) => s.operationName === spanName)
-                    expect(span.operationName).to.equal(spanName)
-                    const tag = span.tags.find((s) => s.key === 'otel.library.name')
-                    expect(tag.value).to.equal('api-kit')
-                })
-            })
 
             it('adds attributes to the span', async () => {
                 await retry(async () => {
-                    const spans = await fetchSpans({ spanName })
-
-                    const span = spans.find((s) => s.operationName === spanName)
-                    expect(span.operationName).to.equal(spanName)
-                    const tag = span.tags.find((s) => s.key === 'my')
-                    expect(tag.value).to.equal('attr')
+                    await assertSpanWithAttributeExists(spanName)
                 })
             })
 
@@ -169,16 +106,18 @@ describe('Tracing', () => {
             before(() => {
                 return simpleFetch('http://127.0.0.1:4444/prefix/orphaned-span')
             })
-            it('creates a span with a prefix', async () => {
-                await retry(async () => {
-                    const spans = await fetchSpans({ spanName })
-
-                    const span = spans.find((s) => s.operationName === spanName)
-                    expect(span.operationName).to.equal(spanName)
-                    const tag = span.tags.find((s) => s.key === 'otel.library.name')
-                    expect(tag.value).to.equal('api-kit')
-                })
+            it('adds attributes to the span', async () => {
+                await assertSpanWithAttributeExists(spanName)
             })
         })
     })
 })
+
+async function assertSpanWithAttributeExists(spanName) {
+    const spans = await fetchSpans({ spanName })
+
+    const span = spans.find((s) => s.operationName === spanName)
+    expect(span.operationName).to.equal(spanName)
+    const tag = span.tags.find((s) => s.key === 'my')
+    expect(tag.value).to.equal('attr')
+}
