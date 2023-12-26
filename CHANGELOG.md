@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.8.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.7.0...v0.8.0) (2023-12-26)
+
+
+### Features
+
+* export span status codes ([9d3d8db](https://github.com/discue/open-telemetry-tracing/issues/commit/9d3d8dba3e62976d6990590c25f16029a1014f03))
+
+
+### Chores
+
+* **deps:** allow newer version of trace otlp http ([ae3f123](https://github.com/discue/open-telemetry-tracing/issues/commit/ae3f123fbb7cc6dd0b3fc7a52af41502911e73a0))
+* remove types after publish ([c1cbce8](https://github.com/discue/open-telemetry-tracing/issues/commit/c1cbce85bfeb19592a7abbd16f1f4bf1c3be038c))
+
 ## [0.7.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.6.0...v0.7.0) (2023-12-25)
 
 
