@@ -10,7 +10,8 @@
   ],
   "exports": {
     ".": "./lib/index.js",
-    "./instrumentation": "./lib/instrumentation.js"
+    "./instrumentation": "./lib/instrumentation.js",
+    "./status-codes": "./lib/status-codes.js"
   },
   "typesVersions": {
     "*": {
