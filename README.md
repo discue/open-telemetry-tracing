@@ -164,6 +164,11 @@ The following environment variables will be used:
 - `DSQ_OT_USE_SIMPLE_SPAN_PROCESSOR`
   - default: false
 
+## Exports
+- **/**: The main export is the `createTracer` function. Import it via `@discue/open-telemetry-tracing` to create traces as shown above. 
+- **/status-codes**: Returns valid status codes a span can have. Use this expor to not couple your application to the Open Telemetry libraries. Use it via `@discue/open-telemetry-tracing/status-codes`.
+- **/instrumentation**: The `instrumentation` script needs to be loaded via `NODE_OPTIONS` function. Internally it is also used via `@discue/open-telemetry-tracing/instrumentation` to get ahold of the current tracer. Implementation applications should not need to use this
+
 ## Test
 ```bash
 ./test.sh
