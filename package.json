@@ -2,9 +2,6 @@
   "name": "@discue/open-telemetry-tracing",
   "version": "0.8.0",
   "description": "Simple scheduling and queueing",
-  "engines": {
-    "node": "18"
-  },
   "files": [
     "lib"
   ],
