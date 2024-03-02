@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.9.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.8.0...v0.9.0) (2024-03-02)
+
+
+### Chores
+
+* **deps-dev:** bump eslint from 8.56.0 to 8.57.0 ([e4caf71](https://github.com/discue/open-telemetry-tracing/issues/commit/e4caf714694ec726a6611f86bd85420d4be52b17))
+* **deps-dev:** bump mocha from 10.2.0 to 10.3.0 ([9fae5b2](https://github.com/discue/open-telemetry-tracing/issues/commit/9fae5b2d4910868061bd269e507af4fbf4e378c3))
+* **deps:** bump the opentelemetry group with 14 updates ([548c1e4](https://github.com/discue/open-telemetry-tracing/issues/commit/548c1e4773febc08911453b3f6a523bb91ab5fc6))
+* **deps:** bump the opentelemetry group with 6 updates ([d2b9ac0](https://github.com/discue/open-telemetry-tracing/issues/commit/d2b9ac05d38475f30895bb30973bee674e0762c9))
+* **deps:** bump the opentelemetry group with 7 updates ([25baeab](https://github.com/discue/open-telemetry-tracing/issues/commit/25baeabd5f38cdba7863e3983824d7634d3027f8))
+* **deps:** update dependencies ([c850fc8](https://github.com/discue/open-telemetry-tracing/issues/commit/c850fc83273263a8ad6d12af90e99686be2144d6))
+* **package:** remove engine specification ([0a8c0d8](https://github.com/discue/open-telemetry-tracing/issues/commit/0a8c0d8aa262316b1170797eba1852b8b1ca0f1e))
+
 ## [0.8.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.7.0...v0.8.0) (2023-12-26)
 
 
