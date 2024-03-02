@@ -32,6 +32,14 @@ describe('Tracing', () => {
                     }
                 })
             })
+
+            it('returns false if callback returns false', async () => {
+                const { withActiveSpan } = createTracer('test')
+                const result = await withActiveSpan('withActiveSpan-test-span', () => {
+                    return false
+                })
+                expect(result).to.equal(false)
+            })
         })
         describe('.withActiveSpan', () => {
             const spanName = 'api-kit::active-handler'
@@ -65,7 +73,7 @@ describe('Tracing', () => {
                 })
             })
         })
-   
+
         describe('.withActiveSpanSync', () => {
             const spanName = 'api-kit::active-sync-handler'
             before(() => {
@@ -100,7 +108,7 @@ describe('Tracing', () => {
                 })
             })
         })
-        
+
         describe('.withOrphanedSpan', () => {
             const spanName = 'api-kit::orphaned-span-handler'
             before(() => {
