@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.10.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.9.0...v0.10.0) (2024-03-03)
+
+
+### Features
+
+* add methods to get active trace ids ([bd37dd2](https://github.com/discue/open-telemetry-tracing/issues/commit/bd37dd27333ee8e6f2f7af3125481de88547547d))
+
 ## [0.9.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.8.0...v0.9.0) (2024-03-02)
 
 
