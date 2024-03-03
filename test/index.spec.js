@@ -1,5 +1,5 @@
 const { expect } = require('chai')
-const { createTracer } = require('../lib/index.js')
+const { createTracer, getActiveSpanAndTraceIds } = require('../lib/index.js')
 const { fetchSpans } = require('./simple-fetch.js')
 const simpleFetch = require('./simple-fetch.js')
 const testServer = require('./test-server.js')
@@ -8,6 +8,25 @@ const retry = require('./retry.js')
 describe('Tracing', () => {
     after(() => {
         return testServer.close()
+    })
+
+    describe('.getActiveSpanAndTraceIds', () => {
+        it('returns span id if called within active span', (done) => {
+            const tracer = createTracer('test')
+            tracer.withActiveSpan('withActiveSpan-test-span', (span) => {
+                const { spanId } = getActiveSpanAndTraceIds()
+                expect(spanId).to.equal(span.spanContext().spanId)
+                done()
+            })
+        })
+        it('returns traceId id if called within active span', (done) => {
+            const tracer = createTracer('test')
+            tracer.withActiveSpan('withActiveSpan-test-span', (span) => {
+                const { traceId } = getActiveSpanAndTraceIds()
+                expect(traceId).to.equal(span.spanContext().traceId)
+                done()
+            })
+        })
     })
 
     describe('.createTracer', () => {
