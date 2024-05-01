@@ -7,12 +7,12 @@
 <br/>
 <div align="center">
 
-[![GitHub tag](https://img.shields.io/github/tag/discue/open-telementry-tracing?include_prereleases=&sort=semver&color=blue)](https://github.com/discue/open-telementry-tracing/releases/)
-[![Latest Stable Version](https://img.shields.io/npm/v/@discue/open-telementry-tracing.svg)](https://www.npmjs.com/package/@discue/open-telementry-tracing)
-[![License](https://img.shields.io/npm/l/@discue/open-telementry-tracing.svg)](https://www.npmjs.com/package/@discue/open-telementry-tracing)
+[![GitHub tag](https://img.shields.io/github/tag/discue/open-telemetry-tracing?include_prereleases=&sort=semver&color=blue)](https://github.com/discue/open-telemetry-tracing/releases/)
+[![Latest Stable Version](https://img.shields.io/npm/v/@discue/open-telemetry-tracing.svg)](https://www.npmjs.com/package/@discue/open-telemetry-tracing)
+[![License](https://img.shields.io/npm/l/@discue/open-telemetry-tracing.svg)](https://www.npmjs.com/package/@discue/open-telemetry-tracing)
 <br/>
-[![NPM Downloads](https://img.shields.io/npm/dt/@discue/open-telementry-tracing.svg)](https://www.npmjs.com/package/@discue/open-telementry-tracing)
-[![NPM Downloads](https://img.shields.io/npm/dm/@discue/open-telementry-tracing.svg)](https://www.npmjs.com/package/@discue/open-telementry-tracing)
+[![NPM Downloads](https://img.shields.io/npm/dt/@discue/open-telemetry-tracing.svg)](https://www.npmjs.com/package/@discue/open-telemetry-tracing)
+[![NPM Downloads](https://img.shields.io/npm/dm/@discue/open-telemetry-tracing.svg)](https://www.npmjs.com/package/@discue/open-telemetry-tracing)
 <br/>
 [![contributions - welcome](https://img.shields.io/badge/contributions-welcome-blue)](/CONTRIBUTING.md "Go to contributions doc")
 [![Made with Node.js](https://img.shields.io/badge/Node.js->=18-blue?logo=node.js&logoColor=white)](https://nodejs.org "Go to Node.js homepage")
