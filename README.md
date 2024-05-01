@@ -47,7 +47,7 @@ If you feel instrumentations (or other features) are missing, please get in touc
 
 ## How to create a span
 
-Import the function `createTracer` and pass the `filepath` as an optional parameter.
+Import the function `createTracer` function.
 ```js
 import { createTracer } from '@discue/open-telemetry-tracing';
 ```
@@ -59,7 +59,7 @@ const { withActiveSpan } = createTracer({
 })
 ```
 
-Wrap existing or new code inside a call to `withActiveSpan`.
+Wrap existing or new code inside a call to `withActiveSpan`. You can add `spanEvents` to add additional information for later analysis.
 ```js
 /**
  * 
