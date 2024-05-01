@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.11.0...v0.12.0) (2024-05-01)
+
+
+### Features
+
+* use new node sdk implementation ([7dad98e](https://github.com/discue/open-telemetry-tracing/issues/commit/7dad98eb606fbe9675e2e571a36039dbb149da18))
+
+
+### Chores
+
+* clarify usage ([e40ac3c](https://github.com/discue/open-telemetry-tracing/issues/commit/e40ac3c15d2b85d35eba9967943efc08b6ac3cfa))
+* **deps:** clean up dependencies ([7dd2f81](https://github.com/discue/open-telemetry-tracing/issues/commit/7dd2f81ca6183611982a26c3b84d2a7f04e3a417))
+* **deps:** install node sdk ([8fbf199](https://github.com/discue/open-telemetry-tracing/issues/commit/8fbf19914de6e08d13a46e7218b2b7d93b7fb220))
+* **docs:** update readme ([9252186](https://github.com/discue/open-telemetry-tracing/issues/commit/9252186000fada34d5efd4fe40962e638d1285fc))
+* **docs:** update repo name ([95005e6](https://github.com/discue/open-telemetry-tracing/issues/commit/95005e6422d23cb24c726abb290e38f4c5aa4ec3))
+* make debug logging configurable ([03e8388](https://github.com/discue/open-telemetry-tracing/issues/commit/03e8388f4bbbbc04239cc343f0fb4e5ca01f6f1c))
+
 ## [0.11.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.10.0...v0.11.0) (2024-05-01)
 
 
