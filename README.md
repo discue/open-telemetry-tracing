@@ -156,12 +156,15 @@ await withOrphanedSpan('check-content-type-is-set', spanAttributes, (span) => {
 See a full implementation e.g. in [@stfsy/api-kit/content-type-middleware](https://github.com/stfsy/node-api-kit/blob/main/lib/middlewares/content-type.js).
 
 ## Configuration
-The following environment variables will be used:
+The following environment variables can be set:
 - `DSQ_OT_TRACING_SERVICE_NAME` 
   - default: api-kit
 - `DSQ_OT_LOCAL_OLTP_URL`
   - default: http://127.0.0.1:4318/v1/traces
+  - note:  for cloud environments automatically, this library will configure the right exporter
 - `DSQ_OT_USE_SIMPLE_SPAN_PROCESSOR`
+  - default: false
+- `DSQ_OT_ENABLE_DEBUG_LOGGING`
   - default: false
 
 ## Exports
