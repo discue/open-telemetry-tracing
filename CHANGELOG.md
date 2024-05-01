@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.12.0...v0.13.0) (2024-05-01)
+
+
+### Bug Fixes
+
+* no span exports on google cloud ([6337c51](https://github.com/discue/open-telemetry-tracing/issues/commit/6337c517c0bb3a73b7ea722ca1c16be2c436d879))
+
 ## [0.12.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.11.0...v0.12.0) (2024-05-01)
 
 
