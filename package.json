@@ -61,7 +61,7 @@
     "chai": "^4.3.10",
     "eslint": "^9.3.0",
     "express": "^4.19.2",
-    "globals": "^15.2.0",
+    "globals": "^15.3.0",
     "mocha": "^10.4.0",
     "nyc": "^15.1.0",
     "standard-version": "^9.5.0",
