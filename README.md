@@ -170,7 +170,7 @@ The following environment variables can be set:
 ## Exports
 - **/**: The main export is the `createTracer` function. Import it via `@discue/open-telemetry-tracing` to create traces as shown above. 
 - **/status-codes**: Returns valid status codes a span can have. Use this expor to not couple your application to the Open Telemetry libraries. Use it via `@discue/open-telemetry-tracing/status-codes`.
-- **/instrumentation**: The `instrumentation` script needs to be loaded via `NODE_OPTIONS` function. Internally it is also used via `@discue/open-telemetry-tracing/instrumentation` to get ahold of the current tracer. Implementation applications should not need to use this
+- **/instrumentation**: The `instrumentation` script needs to be loaded via `NODE_OPTIONS` function. This export is used internally via `@discue/open-telemetry-tracing/instrumentation` to get ahold of the current tracer. Users of this library should not need to use this export.
 
 ## Test
 ```bash
