@@ -63,7 +63,7 @@
     "express": "^4.19.2",
     "globals": "^15.4.0",
     "mocha": "^10.4.0",
-    "nyc": "^15.1.0",
+    "nyc": "^17.0.0",
     "standard-version": "^9.5.0",
     "typescript": "^5.4.5"
   }
