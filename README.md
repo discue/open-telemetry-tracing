@@ -39,9 +39,9 @@ To enable tracing, the tracing runtime needs to be loaded **before** your applic
 [Instrumentations](https://opentelemetry.io/docs/instrumentation/js/libraries/) are the heart of tracing. Most of the tracing instrumentation is platform-agnostic. However, some parts of it can be platform-dependent.
 
 This module features support for GCP and half-baked support for AWS (due to lack of usage of the platform in other projects). You can find the default instrumentations here:
-- [Amazon Web Services](lib/tracing/aws/aws-instrumentations.cjs)
-- [Google Cloud Platform](lib/tracing/gcp/gcp-instrumentations.cjs)
-- [Localhost / Development](lib/tracing/gcp/gcp-instrumentations.cjs)
+- [Amazon Web Services](lib/tracing/aws-lambda/aws-instrumentations.cjs)
+- [Google Cloud Run](lib/tracing/gcp-cloud-run/gcp-instrumentations.cjs)
+- [Localhost / Development](lib/tracing/gcp-cloud-run/gcp-instrumentations.cjs)
 
 If you feel instrumentations (or other features) are missing, please get in touch with us and / or open a PR 🙂.
 
