@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v1.0.0...v1.1.0) (2024-08-06)
+
+
+### Features
+
+* manually flush span processor and exporter on shutdown ([9207975](https://github.com/discue/open-telemetry-tracing/issues/commit/92079753b2ceed5bad344eef42b1a31e6176fc4b))
+
+
+### Chores
+
+* **deps-dev:** bump eslint from 9.6.0 to 9.7.0 ([f5ef421](https://github.com/discue/open-telemetry-tracing/issues/commit/f5ef4219246fc07ba923ce8cda295fa98e870d41))
+* **deps-dev:** bump eslint from 9.7.0 to 9.8.0 ([7f10295](https://github.com/discue/open-telemetry-tracing/issues/commit/7f10295db6c841d00a5615f97fe1c64b6bef80a1))
+* **deps-dev:** bump globals from 15.8.0 to 15.9.0 ([f1c53bc](https://github.com/discue/open-telemetry-tracing/issues/commit/f1c53bc250ef31c67eb3aabd5b68626dba50bde8))
+* **deps-dev:** bump mocha from 10.6.0 to 10.7.0 ([ed11ba0](https://github.com/discue/open-telemetry-tracing/issues/commit/ed11ba070568ff6dac949e4ac7aefba4c320ad56))
+* **deps-dev:** bump typescript from 5.5.3 to 5.5.4 ([5b31d25](https://github.com/discue/open-telemetry-tracing/issues/commit/5b31d25afb518a84e48979a3b08121a6618be198))
+* **deps:** bump @google-cloud/opentelemetry-cloud-trace-exporter ([aad81a2](https://github.com/discue/open-telemetry-tracing/issues/commit/aad81a2eff2849d5816b0ed82b3eef9ae75b32e8))
+* **deps:** bump @opentelemetry/instrumentation-express ([66a122a](https://github.com/discue/open-telemetry-tracing/issues/commit/66a122acf96fa874bf23f633bd1e9124b4123487))
+
 ## [1.0.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v0.13.0...v1.0.0) (2024-07-07)
 
 
