@@ -1,8 +1,11 @@
-const globals = require('globals')
-const js = require("@eslint/js")
+const js = require("@eslint/js");
+const stylistic = require('@stylistic/eslint-plugin');
+const jsdoc = require('eslint-plugin-jsdoc');
+const globals = require('globals');
 
 module.exports = [
     js.configs.recommended,
+    jsdoc.configs['flat/recommended'],
     {
         languageOptions: {
             ecmaVersion: 2022,
@@ -11,7 +14,19 @@ module.exports = [
                 ...globals.node
             }
         },
+        plugins: {
+            '@stylistic': stylistic
+        },
         rules: {
+            "@stylistic/no-extra-semi": "warn",
+            "@stylistic/array-element-newline": ["warn", "consistent"],
+            "@stylistic/semi": [
+                "error",
+                "never"
+            ],
+            'jsdoc/tag-lines': 'off',
+            'jsdoc/no-defaults': 'off',
+            "jsdoc/sort-tags": 1,
             'no-unused-vars': [
                 'error',
                 {
@@ -19,10 +34,6 @@ module.exports = [
                     varsIgnorePattern: '^_',
                     caughtErrorsIgnorePattern: '^_',
                 }
-            ],
-            "semi": [
-                "error",
-                "never"
             ],
             "quotes": [
                 "error",
