@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v1.1.0...v1.2.0) (2024-08-15)
+
+
+### Features
+
+* **instrumentation:** make sure resources like host are auto detected ([8e0ea5e](https://github.com/discue/open-telemetry-tracing/issues/commit/8e0ea5ee606d005f6346789b3742d08be6fe859c))
+
+
+### Bug Fixes
+
+* **instrumentation:** dont force flush if method does not exist ([dc3f412](https://github.com/discue/open-telemetry-tracing/issues/commit/dc3f4121da1f586a276ddf1923be3dbcdd3b7eac))
+
+
+### Chores
+
+* apply new linting rules ([7a0eaab](https://github.com/discue/open-telemetry-tracing/issues/commit/7a0eaabddbd39ae785545777084576a57a0791a0))
+* **deps-dev:** bump eslint from 9.8.0 to 9.9.0 ([465a33c](https://github.com/discue/open-telemetry-tracing/issues/commit/465a33c5efc708b8c41e75db70919980344598d0))
+* **deps-dev:** bump mocha from 10.7.0 to 10.7.3 ([81c6b9c](https://github.com/discue/open-telemetry-tracing/issues/commit/81c6b9c482f9589f571bb7c69ccdbb3bc483341b))
+
 ## [1.1.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v1.0.0...v1.1.0) (2024-08-06)
 
 
