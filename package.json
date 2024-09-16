@@ -62,7 +62,7 @@
     "chai": "^4.3.10",
     "eslint": "^9.10.0",
     "eslint-plugin-jsdoc": "^50.2.2",
-    "express": "^4.19.2",
+    "express": "^4.21.0",
     "globals": "^15.9.0",
     "mocha": "^10.7.3",
     "nyc": "^17.0.0",
