@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v1.2.0...v1.3.0) (2024-10-20)
+
+
+### Chores
+
+* **deps-dev:** bump @stylistic/eslint-plugin from 2.6.3 to 2.6.4 ([b1ddfd8](https://github.com/discue/open-telemetry-tracing/issues/commit/b1ddfd86e5929be0e1aac7126b2f5ca1033e05b5))
+* **deps-dev:** bump @stylistic/eslint-plugin from 2.6.4 to 2.7.2 ([a8f245a](https://github.com/discue/open-telemetry-tracing/issues/commit/a8f245a18e1287b784e47e525f97acd72e8dbb4c))
+* **deps-dev:** bump @stylistic/eslint-plugin from 2.7.2 to 2.8.0 ([371fe25](https://github.com/discue/open-telemetry-tracing/issues/commit/371fe256753e23c898d3d4edd030251d7d652607))
+* **deps-dev:** bump @stylistic/eslint-plugin from 2.8.0 to 2.9.0 ([1bc5760](https://github.com/discue/open-telemetry-tracing/issues/commit/1bc5760e8a37b2c8bde646e4f6ce5cfb09cc9c44))
+* **deps-dev:** bump eslint from 9.10.0 to 9.11.0 ([4ee85d1](https://github.com/discue/open-telemetry-tracing/issues/commit/4ee85d105b887baac9b1014f1bd31bbdffc1a53a))
+* **deps-dev:** bump eslint from 9.11.0 to 9.11.1 ([644c4f9](https://github.com/discue/open-telemetry-tracing/issues/commit/644c4f9f11c5bfa4db3bcc9ef9374c71b77f3ba3))
+* **deps-dev:** bump eslint from 9.11.1 to 9.12.0 ([c70fa3c](https://github.com/discue/open-telemetry-tracing/issues/commit/c70fa3c31a5ef43e06b6e2d33a15fde36dad617f))
+* **deps-dev:** bump eslint from 9.9.0 to 9.9.1 ([3defd73](https://github.com/discue/open-telemetry-tracing/issues/commit/3defd73d519546d53ff2edd3867858cd22436667))
+* **deps-dev:** bump eslint from 9.9.1 to 9.10.0 ([a9b2923](https://github.com/discue/open-telemetry-tracing/issues/commit/a9b29235c64cef896a72ac6b28c28c36504c7342))
+* **deps-dev:** bump eslint-plugin-jsdoc from 50.2.2 to 50.2.4 ([8c0b65e](https://github.com/discue/open-telemetry-tracing/issues/commit/8c0b65ef84440c8ee91638a75c473546b98d8568))
+* **deps-dev:** bump eslint-plugin-jsdoc from 50.2.4 to 50.3.0 ([fad2176](https://github.com/discue/open-telemetry-tracing/issues/commit/fad21763e913a05c5f436f057ebcf75ea8efeceb))
+* **deps-dev:** bump eslint-plugin-jsdoc from 50.3.0 to 50.3.1 ([e9e624a](https://github.com/discue/open-telemetry-tracing/issues/commit/e9e624aa7913b984432c5be565e262db7e803c16))
+* **deps-dev:** bump eslint-plugin-jsdoc from 50.3.1 to 50.3.2 ([ecc2de5](https://github.com/discue/open-telemetry-tracing/issues/commit/ecc2de55d2d2ebb89100bf2ec60028a32e292f04))
+* **deps-dev:** bump express from 4.19.2 to 4.21.0 ([87f387a](https://github.com/discue/open-telemetry-tracing/issues/commit/87f387a61faabea94cdd00c83faffc399cec5e5f))
+* **deps-dev:** bump express from 4.21.0 to 4.21.1 ([5bc1b14](https://github.com/discue/open-telemetry-tracing/issues/commit/5bc1b14d82f6a3d018aa8d8deca3979357f70937))
+* **deps-dev:** bump globals from 15.10.0 to 15.11.0 ([ffce696](https://github.com/discue/open-telemetry-tracing/issues/commit/ffce6963175a6904c671a552a48ff3ce92435034))
+* **deps-dev:** bump globals from 15.9.0 to 15.10.0 ([90fd39e](https://github.com/discue/open-telemetry-tracing/issues/commit/90fd39ed7547d5ffc68d5752e961471c1e844a6d))
+* **deps-dev:** bump nyc from 17.0.0 to 17.1.0 ([33ec4d7](https://github.com/discue/open-telemetry-tracing/issues/commit/33ec4d7e2e37f3a13083791b834f867764203807))
+* **deps-dev:** bump typescript from 5.5.4 to 5.6.2 ([82dae62](https://github.com/discue/open-telemetry-tracing/issues/commit/82dae62016b1513d89f9bf86e98f85b6cc3dbfe5))
+* **deps-dev:** bump typescript from 5.6.2 to 5.6.3 ([0ecde27](https://github.com/discue/open-telemetry-tracing/issues/commit/0ecde27c7b9a50ca292df808ca79f5e68cded0f4))
+* **deps:** bump @google-cloud/opentelemetry-cloud-trace-exporter ([b78a239](https://github.com/discue/open-telemetry-tracing/issues/commit/b78a2394f38b5db84e02b46411c20d11a46780dd))
+* **deps:** bump actions/checkout from 4.1.7 to 4.2.0 ([f7388b6](https://github.com/discue/open-telemetry-tracing/issues/commit/f7388b61ea60f935cbcd80ca74cc246cd5b4627e))
+* **deps:** bump actions/checkout from 4.2.0 to 4.2.1 ([8750013](https://github.com/discue/open-telemetry-tracing/issues/commit/87500135b08d6af88ead85e1846002d8c5e31744))
+* **deps:** bump the opentelemetry group with 2 updates ([770105f](https://github.com/discue/open-telemetry-tracing/issues/commit/770105ff20c062fd537308520260891c6bf9d0ae))
+* **deps:** bump the opentelemetry group with 6 updates ([29ea0c6](https://github.com/discue/open-telemetry-tracing/issues/commit/29ea0c69668457108be6b949fc528b98cf3652aa))
+* **deps:** bump the opentelemetry group with 7 updates ([3aa1510](https://github.com/discue/open-telemetry-tracing/issues/commit/3aa15109f58337dc4a37fc53667aa460372f0aa2))
+
 ## [1.2.0](https://github.com/discue/open-telemetry-tracing/issues/compare/v1.1.0...v1.2.0) (2024-08-15)
 
 
