@@ -44,18 +44,18 @@
   "dependencies": {
     "@google-cloud/opentelemetry-cloud-trace-exporter": "^2.4.1",
     "@opentelemetry/exporter-jaeger": "^1.27.0",
-    "@opentelemetry/exporter-trace-otlp-http": "^0.54.0",
-    "@opentelemetry/instrumentation": "^0.54.0",
-    "@opentelemetry/instrumentation-aws-lambda": "^0.46.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.54.2",
+    "@opentelemetry/instrumentation": "^0.54.2",
+    "@opentelemetry/instrumentation-aws-lambda": "^0.47.0",
     "@opentelemetry/instrumentation-dns": "^0.40.0",
     "@opentelemetry/instrumentation-express": "^0.44.0",
     "@opentelemetry/instrumentation-fs": "^0.16.0",
-    "@opentelemetry/instrumentation-grpc": "^0.54.0",
-    "@opentelemetry/instrumentation-http": "^0.54.0",
+    "@opentelemetry/instrumentation-grpc": "^0.54.2",
+    "@opentelemetry/instrumentation-http": "^0.54.2",
     "@opentelemetry/instrumentation-mongodb": "^0.48.0",
     "@opentelemetry/instrumentation-net": "^0.40.0",
     "@opentelemetry/instrumentation-pino": "^0.43.0",
-    "@opentelemetry/sdk-node": "^0.54.0"
+    "@opentelemetry/sdk-node": "^0.54.2"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^2.10.1",
