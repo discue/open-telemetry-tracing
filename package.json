@@ -60,7 +60,7 @@
   "devDependencies": {
     "@stylistic/eslint-plugin": "^4.2.0",
     "chai": "^4.3.10",
-    "eslint": "^9.21.0",
+    "eslint": "^9.22.0",
     "eslint-plugin-jsdoc": "^50.6.3",
     "express": "^4.21.2",
     "globals": "^16.0.0",
