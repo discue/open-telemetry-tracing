@@ -42,7 +42,7 @@
   "author": "Stefan Pfaffel <spfaffel@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@google-cloud/opentelemetry-cloud-trace-exporter": "^2.4.1",
+    "@google-cloud/opentelemetry-cloud-trace-exporter": "^3.0.0",
     "@opentelemetry/exporter-jaeger": "^2.1.0",
     "@opentelemetry/exporter-trace-otlp-http": "^0.205.0",
     "@opentelemetry/instrumentation": "^0.205.0",
