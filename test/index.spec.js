@@ -110,9 +110,7 @@ describe('Tracing', () => {
             })
 
             it('adds attributes to the span', async () => {
-                await retry(async () => {
-                    await assertSpanWithAttributeExists(spanName)
-                })
+                await assertSpanWithAttributeExists(spanName)
             })
 
             it('calls the callback with the span as first attribute', (done) => {
@@ -141,10 +139,12 @@ describe('Tracing', () => {
 })
 
 async function assertSpanWithAttributeExists(spanName) {
-    const spans = await fetchSpans({ spanName })
+    retry(async () => {
+        const spans = await fetchSpans({ spanName })
 
-    const span = spans.find((s) => s.operationName === spanName)
-    expect(span.operationName).to.equal(spanName)
-    const tag = span.tags.find((s) => s.key === 'my')
-    expect(tag.value).to.equal('attr')
+        const span = spans.find((s) => s.operationName === spanName)
+        expect(span.operationName).to.equal(spanName)
+        const tag = span.tags.find((s) => s.key === 'my')
+        expect(tag.value).to.equal('attr')
+    })
 }
