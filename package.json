@@ -58,7 +58,7 @@
     "@opentelemetry/sdk-node": "^0.210.0"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^5.7.0",
+    "@stylistic/eslint-plugin": "^5.8.0",
     "chai": "^4.3.10",
     "eslint": "^9.39.2",
     "eslint-plugin-jsdoc": "^62.5.4",
