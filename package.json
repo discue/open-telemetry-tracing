@@ -44,29 +44,30 @@
   "dependencies": {
     "@google-cloud/opentelemetry-cloud-trace-exporter": "^3.0.0",
     "@opentelemetry/exporter-jaeger": "^2.4.0",
-    "@opentelemetry/exporter-trace-otlp-http": "^0.210.0",
-    "@opentelemetry/instrumentation": "^0.210.0",
-    "@opentelemetry/instrumentation-aws-lambda": "^0.62.0",
-    "@opentelemetry/instrumentation-dns": "^0.53.0",
-    "@opentelemetry/instrumentation-express": "^0.58.0",
-    "@opentelemetry/instrumentation-fs": "^0.29.0",
-    "@opentelemetry/instrumentation-grpc": "^0.210.0",
-    "@opentelemetry/instrumentation-http": "^0.210.0",
-    "@opentelemetry/instrumentation-mongodb": "^0.63.0",
-    "@opentelemetry/instrumentation-net": "^0.54.0",
-    "@opentelemetry/instrumentation-pino": "^0.56.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.214.0",
+    "@opentelemetry/instrumentation": "^0.214.0",
+    "@opentelemetry/instrumentation-aws-lambda": "^0.66.0",
+    "@opentelemetry/instrumentation-dns": "^0.57.0",
+    "@opentelemetry/instrumentation-express": "^0.62.0",
+    "@opentelemetry/instrumentation-fs": "^0.33.0",
+    "@opentelemetry/instrumentation-grpc": "^0.214.0",
+    "@opentelemetry/instrumentation-http": "^0.214.0",
+    "@opentelemetry/instrumentation-mongodb": "^0.67.0",
+    "@opentelemetry/instrumentation-net": "^0.58.0",
+    "@opentelemetry/instrumentation-pino": "^0.60.0",
     "@opentelemetry/sdk-node": "^0.210.0"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
     "chai": "^4.3.10",
-    "eslint": "^9.39.2",
+    "eslint": "^10.1.0",
     "eslint-plugin-jsdoc": "^62.8.0",
     "express": "^5.2.1",
     "globals": "^17.3.0",
     "mocha": "^11.7.5",
     "nyc": "^18.0.0",
     "standard-version": "^9.5.0",
-    "typescript": "^5.9.2"
+    "typescript": "^6.0.2"
   }
 }
