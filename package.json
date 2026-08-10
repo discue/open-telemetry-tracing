@@ -62,7 +62,7 @@
     "@stylistic/eslint-plugin": "^5.10.0",
     "chai": "^4.3.10",
     "eslint": "^10.8.0",
-    "eslint-plugin-jsdoc": "^63.3.2",
+    "eslint-plugin-jsdoc": "^63.3.3",
     "express": "^5.2.1",
     "globals": "^17.8.0",
     "mocha": "^11.7.6",
