@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.2](https://github.com/discue/open-telemetry-tracing/compare/open-telemetry-tracing-v1.4.1...open-telemetry-tracing-v1.4.2) (2026-10-26)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump eslint from 10.12.0 to 10.13.0 ([5d8485d](https://github.com/discue/open-telemetry-tracing/commit/5d8485d23efb9dd4616e2771861fbfbfc31096ce))
+* **deps-dev:** bump eslint from 10.12.0 to 10.13.0 ([299724e](https://github.com/discue/open-telemetry-tracing/commit/299724eaf586424dbc782784e0238ee2b6a432d2))
+* **deps-dev:** bump eslint-plugin-jsdoc from 65.3.6 to 65.4.1 ([1cbe46d](https://github.com/discue/open-telemetry-tracing/commit/1cbe46d06a9d02b729321e9e9aba99ab0c9ad9cd))
+* **deps-dev:** bump eslint-plugin-jsdoc from 65.3.6 to 65.4.1 ([4072891](https://github.com/discue/open-telemetry-tracing/commit/4072891a0bc19cf205b46a552d543de34b9d5198))
+
 ## [1.4.1](https://github.com/discue/open-telemetry-tracing/compare/open-telemetry-tracing-v1.4.0...open-telemetry-tracing-v1.4.1) (2026-10-22)
 
 
