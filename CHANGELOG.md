@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.2](https://github.com/discue/open-telemetry-tracing/compare/open-telemetry-tracing-v1.4.1...open-telemetry-tracing-v1.4.2) (2026-11-23)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump @stylistic/eslint-plugin from 5.10.0 to 6.0.1 ([5be9c29](https://github.com/discue/open-telemetry-tracing/commit/5be9c290de4b8dfbadd655152ca913fa1998af68))
+* **deps-dev:** bump @stylistic/eslint-plugin from 5.10.0 to 6.0.1 ([5731788](https://github.com/discue/open-telemetry-tracing/commit/5731788ae0c708035ea0d3a0082ea151e6c6e05a))
+* **deps-dev:** bump eslint from 10.12.0 to 10.13.0 ([5d8485d](https://github.com/discue/open-telemetry-tracing/commit/5d8485d23efb9dd4616e2771861fbfbfc31096ce))
+* **deps-dev:** bump eslint from 10.12.0 to 10.13.0 ([299724e](https://github.com/discue/open-telemetry-tracing/commit/299724eaf586424dbc782784e0238ee2b6a432d2))
+* **deps-dev:** bump eslint from 10.13.0 to 10.14.0 ([0baf679](https://github.com/discue/open-telemetry-tracing/commit/0baf67922fe63b78e29f73141a0b2b8b3000514c))
+* **deps-dev:** bump eslint from 10.13.0 to 10.14.0 ([858044c](https://github.com/discue/open-telemetry-tracing/commit/858044c7a72919e9f9435a1f5ee7f2291f2ee593))
+* **deps-dev:** bump eslint from 10.14.0 to 10.15.0 ([15ba03f](https://github.com/discue/open-telemetry-tracing/commit/15ba03ffaa3bff27d717138531a08176058636d2))
+* **deps-dev:** bump eslint from 10.14.0 to 10.15.0 ([f06442b](https://github.com/discue/open-telemetry-tracing/commit/f06442b5cd8f22a44e2173cc8dbf11af45de4b2f))
+* **deps-dev:** bump eslint-plugin-jsdoc from 65.3.6 to 65.4.1 ([1cbe46d](https://github.com/discue/open-telemetry-tracing/commit/1cbe46d06a9d02b729321e9e9aba99ab0c9ad9cd))
+* **deps-dev:** bump eslint-plugin-jsdoc from 65.3.6 to 65.4.1 ([4072891](https://github.com/discue/open-telemetry-tracing/commit/4072891a0bc19cf205b46a552d543de34b9d5198))
+* **deps-dev:** bump eslint-plugin-jsdoc from 65.4.1 to 65.4.2 ([56da4a1](https://github.com/discue/open-telemetry-tracing/commit/56da4a1224466f1d4b0d32b9e53c431031161e6f))
+* **deps-dev:** bump eslint-plugin-jsdoc from 65.4.1 to 65.4.2 ([52d92f8](https://github.com/discue/open-telemetry-tracing/commit/52d92f8070675173a5103bf04ea33d92ad0a7027))
+* **deps-dev:** bump eslint-plugin-jsdoc from 65.4.2 to 65.4.5 ([1b37114](https://github.com/discue/open-telemetry-tracing/commit/1b371141e98e3f4fc6ce7ce547eedb5caa3e99c5))
+* **deps-dev:** bump eslint-plugin-jsdoc from 65.4.2 to 65.4.5 ([690b2f4](https://github.com/discue/open-telemetry-tracing/commit/690b2f46ff673912a9d04bcb97fbe402dc3391c4))
+* **deps-dev:** bump eslint-plugin-jsdoc from 65.4.5 to 65.5.0 ([4417685](https://github.com/discue/open-telemetry-tracing/commit/4417685f503e0d3a0ba48f70da2d4522beef4019))
+* **deps-dev:** bump eslint-plugin-jsdoc from 65.4.5 to 65.5.0 ([a2c9bf9](https://github.com/discue/open-telemetry-tracing/commit/a2c9bf982ac75d69ddb147dfc932059dae1c184e))
+* **deps-dev:** bump globals from 17.13.0 to 17.14.0 ([712d672](https://github.com/discue/open-telemetry-tracing/commit/712d672329bade476d2abca81caed71ec764670b))
+* **deps-dev:** bump globals from 17.13.0 to 17.14.0 ([b28e6a7](https://github.com/discue/open-telemetry-tracing/commit/b28e6a7b3ab5ef163821197d86cf6298277a86fa))
+
 ## [1.4.1](https://github.com/discue/open-telemetry-tracing/compare/open-telemetry-tracing-v1.4.0...open-telemetry-tracing-v1.4.1) (2026-10-22)
 
 
